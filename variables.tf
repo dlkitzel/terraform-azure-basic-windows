@@ -19,10 +19,21 @@ variable size {}
 variable adminUserName {}
 variable password {}
 
-variable image_publisher {}
-variable image_offer {}
-variable image_sku {}
-variable image_version {}
+variable image_publisher {
+  type = string
+  default = "ServiceNow"
+}
+variable image_offer {
+  type = string
+  default = "GoldenImage"
+}
+variable image_sku {
+  type = string
+  default = "Windows2022"
+}
+variable image_version {
+  default = latest
+}
 
 variable deleteOSDiskOnTerm {
   type = bool
