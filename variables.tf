@@ -32,7 +32,8 @@ variable image_sku {
   default = "Windows2022"
 }
 variable image_version {
-  default = latest
+  type = string
+  default = "latest"
 }
 
 variable deleteOSDiskOnTerm {
